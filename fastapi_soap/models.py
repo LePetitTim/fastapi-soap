@@ -59,7 +59,7 @@ BodyContentType = TypeVar(
 
 
 class SoapBody(
-    BaseGenericXmlModel,
+    BaseXmlModel,
     Generic[BodyContentType],
     tag='Body',
     ns='soap',
@@ -109,7 +109,7 @@ BodyType = TypeVar('BodyType', bound=SoapBody)
 
 
 class SoapEnvelope(
-    BaseGenericXmlModel,
+    BaseXmlModel,
     Generic[HeaderType, BodyType],
     tag='Envelope',
     ns='soap',
