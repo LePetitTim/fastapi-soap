@@ -1,6 +1,6 @@
 from typing import Generic, Optional, TypeVar
 
-from pydantic_xml import BaseGenericXmlModel, BaseXmlModel, element
+from pydantic_xml import BaseXmlModel, element
 
 
 class SoapHeader(
